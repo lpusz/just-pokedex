@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E09600991FC1D3CD00683044 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09600981FC1D3CD00683044 /* PokemonDetailVC.swift */; };
 		E0BCBC7A1FBCE66300971D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BCBC791FBCE66300971D1C /* AppDelegate.swift */; };
 		E0BCBC7C1FBCE66300971D1C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BCBC7B1FBCE66300971D1C /* MainVC.swift */; };
 		E0BCBC7F1FBCE66300971D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0BCBC7D1FBCE66300971D1C /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E09600981FC1D3CD00683044 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 		E0BCBC761FBCE66300971D1C /* pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0BCBC791FBCE66300971D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0BCBC7B1FBCE66300971D1C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				E0BCBC7B1FBCE66300971D1C /* MainVC.swift */,
+				E09600981FC1D3CD00683044 /* PokemonDetailVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				E0E03B151FBE2EF30035202D /* PokeCell.swift in Sources */,
 				E0BCBC7C1FBCE66300971D1C /* MainVC.swift in Sources */,
 				E0BCBC7A1FBCE66300971D1C /* AppDelegate.swift in Sources */,
+				E09600991FC1D3CD00683044 /* PokemonDetailVC.swift in Sources */,
 				E0BCBC911FBCF93900971D1C /* Pokemon.swift in Sources */,
 				E0E03B171FBE48000035202D /* Csv.swift in Sources */,
 			);
@@ -349,7 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.lukaszpusz.pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -364,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.lukaszpusz.pokedex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

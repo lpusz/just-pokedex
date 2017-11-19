@@ -25,11 +25,9 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         collectionView.dataSource = self
         collectionView.delegate = self
         searchBar.delegate = self
-//        searchBar.backgroundColor = UIColor(red: 255, green: 255, blue: 25, alpha: 0.75)
-//        searchBar.backgroundImage = UIImage()
         
         parsePokemonCSV()
-        initAudio()
+//        initAudio()
     }
     
     func initAudio() {
@@ -94,7 +92,15 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        var pokemon: Pokemon!
         
+        if inSearchMode {
+            pokemon = filteredPokemons[indexPath.row]
+        } else {
+            pokemon = pokemons[indexPath.row]
+        }
+        
+        performSegue(withIdentifier: "PokemonDetailVC", sender: pokemon)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -130,5 +136,15 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         view.endEditing(true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PokemonDetailVC" {
+            if let detailsVC = segue.destination as? PokemonDetailVC {
+                if let poke = sender as? Pokemon {
+                    detailsVC.pokemon = poke
+                }
+            }
+        }
     }
 }
