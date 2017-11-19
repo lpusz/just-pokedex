@@ -21,6 +21,7 @@
 		E0CD0D291FC1070C00F5676F /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E0CD0D281FC1070C00F5676F /* music.mp3 */; };
 		E0E03B151FBE2EF30035202D /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E03B141FBE2EF30035202D /* PokeCell.swift */; };
 		E0E03B171FBE48000035202D /* Csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E03B161FBE47FF0035202D /* Csv.swift */; };
+		E0E29B301FC2011700C48E7D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E29B2F1FC2011700C48E7D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		E0CD0D281FC1070C00F5676F /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		E0E03B141FBE2EF30035202D /* PokeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		E0E03B161FBE47FF0035202D /* Csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Csv.swift; sourceTree = "<group>"; };
+		E0E29B2F1FC2011700C48E7D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				E0E03B161FBE47FF0035202D /* Csv.swift */,
+				E0E29B2F1FC2011700C48E7D /* Constants.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				E0BCBC7C1FBCE66300971D1C /* MainVC.swift in Sources */,
 				E0BCBC7A1FBCE66300971D1C /* AppDelegate.swift in Sources */,
 				E09600991FC1D3CD00683044 /* PokemonDetailVC.swift in Sources */,
+				E0E29B301FC2011700C48E7D /* Constants.swift in Sources */,
 				E0BCBC911FBCF93900971D1C /* Pokemon.swift in Sources */,
 				E0E03B171FBE48000035202D /* Csv.swift in Sources */,
 			);
