@@ -27,7 +27,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         searchBar.delegate = self
         
         parsePokemonCSV()
-//        initAudio()
+        initAudio()
     }
     
     func initAudio() {
