@@ -53,6 +53,19 @@ class PokemonDetailVC: UIViewController {
         weightLabel.text = pokemon.weight
         typeLabel.text = pokemon.type
         descriptionLabel.text = pokemon.description
+    
+        if pokemon.nextEvolutionName != "" {
+            evolutionLabel.text = "Next evolution: \(pokemon.nextEvolutionName) - LVL \(pokemon.nextEvolutionLevel)"
+        } else {
+            evolutionLabel.text = "Next evolution: -"
+        }
+        
+        if pokemon.nextEvolutionId != -1 {
+            nextEvolutionImage.image = UIImage(named: "\(pokemon.nextEvolutionId)")
+            nextEvolutionImage.isHidden = false
+        } else {
+            nextEvolutionImage.isHidden = true
+        }
     }
     
     @IBAction func onBackButtonPressed(_ sender: UIButton) {
