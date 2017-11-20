@@ -39,6 +39,7 @@ class PokemonDetailVC: UIViewController {
         mainImage.image = UIImage(named: "\(pokemon.pokedexId)")
         currentEvolutionImage.image = UIImage(named: "\(pokemon.pokedexId)")
         pokedexLabel.text = "\(pokemon.pokedexId)"
+        nextEvolutionImage.isHidden = true
         
         pokemon.downloadPokemonDetails(completed: {
             // Whatever we write here will only be called after the network call is complete
@@ -63,8 +64,6 @@ class PokemonDetailVC: UIViewController {
         if pokemon.nextEvolutionId != -1 {
             nextEvolutionImage.image = UIImage(named: "\(pokemon.nextEvolutionId)")
             nextEvolutionImage.isHidden = false
-        } else {
-            nextEvolutionImage.isHidden = true
         }
     }
     
